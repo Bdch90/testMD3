@@ -1,0 +1,12 @@
+<h2>Books with HttpClient</h2>
+
+<div>
+  <input type="text" [formControl]="inputControl" (keydown.enter)="addBook()">
+</div>
+
+<table *ngFor="let book of books; index as i">
+  <tr>
+    <td>{{book.name}}</td>
+    <td>{{book.read}}</td>
+  </tr>
+</table>
